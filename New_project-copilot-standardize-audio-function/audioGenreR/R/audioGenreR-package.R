@@ -26,6 +26,8 @@
 #'   cat(result$genre, result$confidence)
 #' }
 #'
+#' @author Shubham Kumar \email{shubham.stat10@@gmail.com}
+#' @keywords package
 #' @docType package
 #' @name audioGenreR-package
 #' @aliases audioGenreR

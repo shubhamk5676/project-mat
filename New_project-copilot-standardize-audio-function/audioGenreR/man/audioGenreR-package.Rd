@@ -27,3 +27,5 @@ Useful links:
   \item \code{\link{predict_genre}}
 }
 }
+\author{Shubham Kumar \email{shubham.stat10@gmail.com}}
+\keyword{package}

@@ -9,7 +9,7 @@ Description: Provides functions to standardize audio files, extract acoustic
     and predict the music genre of new audio files.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+LazyData: false
 Depends:
     R (>= 4.0.0)
 Imports:
