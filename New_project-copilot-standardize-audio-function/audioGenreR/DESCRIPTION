@@ -1,0 +1,23 @@
+Package: audioGenreR
+Type: Package
+Title: Music Genre Prediction Using PCA and k-Nearest Neighbours
+Version: 0.1.0
+Authors@R: person("Author", "Name", email = "author@example.com", role = c("aut", "cre"))
+Description: Provides functions to standardize audio files, extract acoustic
+    features (RMS energy, zero-crossing rate, spectral features, MFCC, tempo),
+    train a k-Nearest Neighbours classifier with PCA dimensionality reduction,
+    and predict the music genre of new audio files.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 4.0.0)
+Imports:
+    av,
+    tuneR,
+    seewave,
+    class
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
