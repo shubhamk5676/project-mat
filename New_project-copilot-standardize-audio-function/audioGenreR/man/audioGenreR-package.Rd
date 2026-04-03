@@ -18,6 +18,19 @@ Provides a complete pipeline for music genre classification:
         \code{\link{predict_genre}}.
 }
 }
+\section{Typical workflow:}{
+\preformatted{
+  library(audioGenreR)
+
+  # 1. Train (once)
+  train_genre_model("music_dataset.csv", "genre_model.RData")
+
+  # 2. Predict
+  result <- predict_genre("song.mp3")
+  cat(result$genre, result$confidence)
+}
+}
+
 \seealso{
 Useful links:
 \itemize{
@@ -27,3 +40,5 @@ Useful links:
   \item \code{\link{predict_genre}}
 }
 }
+
+\keyword{package}
