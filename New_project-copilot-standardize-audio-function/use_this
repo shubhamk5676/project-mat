@@ -1,0 +1,23 @@
+https://www.dropbox.com/scl/fi/u2dswcam8tj5s3u59cand/assignment10.pdf?rlkey=h93mb4tghve9ris1kxo84z9bb&e=1&dl=0
+find_minima <- function(fun, start)
+{
+  n <- length(start)
+  
+  local.minimas <- numeric(n)
+  fn.at.minimas <- numeric(n)
+  
+  for(i in 1:n)
+  {
+    fit <- optim(par = start[i], fn = fun)
+    
+    local.minimas[i] <- fit$par
+    fn.at.minimas[i] <- fit$value
+  }
+  
+  # index of best (minimum function value)
+  ind <- which.min(fn.at.minimas)
+  
+  # return best argument
+  return(local.minimas[ind])
+}
+
